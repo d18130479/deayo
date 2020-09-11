@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.section-header,.section-footer {
+  padding-top:5px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding-left:8%;
+  padding-right:8%;
+  padding-top:2vh;
+ margin-left:5%;
+ margin-right:5%;
+}
+
+.aa{
+padding:15px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: fit-content;
+  }
+}
+</style>
+</head>
+<body>
+
+ <div class="section-header">
+  <h1>Introduction to our gallery</h1>
+  
+</div>
+<div class="row">
+    <div class="column">
+   		 <a target="_blank" href="adeayo1.jpeg">
+      <img src="adeayo1.jpeg" alt="Books" width='400' class='aa' height="200">
+    </a>
+    </div>
+  
+    <div class="column">
+    <a target="_blank" href="adeayo2.jpeg">
+      <img src="adeayo2.jpeg" class='aa' alt="Books" width="400" height="200">
+    </a>
+    </div>
+</div>  
+
+<div class="row">
+    <div class="column">
+   <a target="_blank" href="adeayo3.jpeg" >
+      <img src="adeayo3.jpeg"  class='aa'alt="Books" width="400" height="200">
+    </a>
+    </div>
+  
+    <div class="column">
+    	 <a target="_blank" href="adeayo4.jpeg">
+      <img src="adeayo4.jpeg"  class='aa' alt="Books" width="400" height="200">
+    </a>
+    </div>
+    
+</div>  
+ 
+ <div class="section-footer">
+  
+  <p>&copy; 2020  <br/>All Rights Reserved</p>
+</div>
+
+</body>
+</html>
